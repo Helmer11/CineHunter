@@ -36,6 +36,7 @@
             this.actoresToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.generosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.CrearGenero = new System.Windows.Forms.ToolStripMenuItem();
+            this.CrearActores = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -64,24 +65,26 @@
             // AgregarPelicula
             // 
             this.AgregarPelicula.Name = "AgregarPelicula";
-            this.AgregarPelicula.Size = new System.Drawing.Size(180, 22);
+            this.AgregarPelicula.Size = new System.Drawing.Size(117, 22);
             this.AgregarPelicula.Text = "Agregar";
             this.AgregarPelicula.Click += new System.EventHandler(this.AgregarPelicula_Click);
             // 
             // editarToolStripMenuItem
             // 
             this.editarToolStripMenuItem.Name = "editarToolStripMenuItem";
-            this.editarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.editarToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.editarToolStripMenuItem.Text = "Editar";
             // 
             // eliminarToolStripMenuItem
             // 
             this.eliminarToolStripMenuItem.Name = "eliminarToolStripMenuItem";
-            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.eliminarToolStripMenuItem.Size = new System.Drawing.Size(117, 22);
             this.eliminarToolStripMenuItem.Text = "Eliminar";
             // 
             // actoresToolStripMenuItem
             // 
+            this.actoresToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.CrearActores});
             this.actoresToolStripMenuItem.Name = "actoresToolStripMenuItem";
             this.actoresToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
             this.actoresToolStripMenuItem.Text = "Actores";
@@ -97,9 +100,16 @@
             // CrearGenero
             // 
             this.CrearGenero.Name = "CrearGenero";
-            this.CrearGenero.Size = new System.Drawing.Size(180, 22);
+            this.CrearGenero.Size = new System.Drawing.Size(102, 22);
             this.CrearGenero.Text = "Crear";
             this.CrearGenero.Click += new System.EventHandler(this.CrearGenero_Click);
+            // 
+            // CrearActores
+            // 
+            this.CrearActores.Name = "CrearActores";
+            this.CrearActores.Size = new System.Drawing.Size(180, 22);
+            this.CrearActores.Text = "Crear";
+            this.CrearActores.Click += new System.EventHandler(this.CrearActores_Click);
             // 
             // Form1
             // 
@@ -127,6 +137,7 @@
         private System.Windows.Forms.ToolStripMenuItem actoresToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem generosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem CrearGenero;
+        private System.Windows.Forms.ToolStripMenuItem CrearActores;
     }
 }
 

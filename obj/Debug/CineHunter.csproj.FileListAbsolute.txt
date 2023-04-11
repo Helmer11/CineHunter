@@ -11,3 +11,4 @@ C:\practicas_y\CineHunter_Test\CineHunter\obj\Debug\CineHunter.pdb
 C:\practicas_y\CineHunter_Test\CineHunter\obj\Debug\CineHunter.Form1.resources
 C:\practicas_y\CineHunter_Test\CineHunter\obj\Debug\CineHunter.Views.GeneroView.resources
 C:\practicas_y\CineHunter_Test\CineHunter\obj\Debug\CineHunter.Views.PeliculasView.resources
+C:\practicas_y\CineHunter_Test\CineHunter\obj\Debug\CineHunter.Views.ActoresView.resources

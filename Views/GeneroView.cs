@@ -17,20 +17,32 @@ namespace CineHunter.Views
     {
        private readonly IGenero gen;
        private readonly Generos gener;
+
         public GeneroView()
         {
             InitializeComponent();
             gen = new GeneroService();
             gener = new Generos();
+            getCargarGenero();
+        }
+        private void getCargarGenero()
+        {
+            dgvGenero.DataSource = gen.GetGeneros();
         }
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
             gener.Descriopcion = txbDescripcion.Text;
              var result = gen.setAgregarGenero(gener);
-
+            txbDescripcion.Clear();
             MessageBox.Show(result);
+            this.getCargarGenero();   
 
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
         }
     }
 }

@@ -30,5 +30,11 @@ namespace CineHunter
             GeneroView genero = new GeneroView();
             genero.Visible = true;
         }
+
+        private void CrearActores_Click(object sender, EventArgs e)
+        {
+            ActoresView actores = new ActoresView();
+            actores.Visible = true; 
+        }
     }
 }

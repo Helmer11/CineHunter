@@ -33,18 +33,21 @@
             this.txbDescripcion = new System.Windows.Forms.TextBox();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
+            this.dgvGenero = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGenero)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.dgvGenero);
             this.groupBox1.Controls.Add(this.btnCancelar);
             this.groupBox1.Controls.Add(this.btnGuardar);
             this.groupBox1.Controls.Add(this.txbDescripcion);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(12, 12);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(500, 202);
+            this.groupBox1.Size = new System.Drawing.Size(482, 444);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Genero";
@@ -83,17 +86,27 @@
             this.btnCancelar.TabIndex = 3;
             this.btnCancelar.Text = "Cancelar";
             this.btnCancelar.UseVisualStyleBackColor = true;
+            this.btnCancelar.Click += new System.EventHandler(this.btnCancelar_Click);
+            // 
+            // dgvGenero
+            // 
+            this.dgvGenero.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvGenero.Location = new System.Drawing.Point(6, 175);
+            this.dgvGenero.Name = "dgvGenero";
+            this.dgvGenero.Size = new System.Drawing.Size(416, 222);
+            this.dgvGenero.TabIndex = 1;
             // 
             // GeneroView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(531, 243);
+            this.ClientSize = new System.Drawing.Size(539, 474);
             this.Controls.Add(this.groupBox1);
             this.Name = "GeneroView";
             this.Text = "GeneroView";
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvGenero)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -105,5 +118,6 @@
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.TextBox txbDescripcion;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.DataGridView dgvGenero;
     }
 }

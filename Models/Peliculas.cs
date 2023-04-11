@@ -19,6 +19,8 @@ namespace CineHunter.Models
 
         public DateTime Fecha_Estreno { get; set; }
 
+        public string ImagenPelicula { get; set; }
+
         public int ActorID { get; set; }
 
         public int GeneroID { get; set; }

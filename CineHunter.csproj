@@ -53,6 +53,7 @@
     <Compile Include="Models\Actores.cs" />
     <Compile Include="Models\Generos.cs" />
     <Compile Include="Models\Peliculas.cs" />
+    <Compile Include="Services\ActoresServices.cs" />
     <Compile Include="Services\Conexion.cs" />
     <Compile Include="Services\GeneroService.cs" />
     <Compile Include="Services\PeliculaService.cs" />
@@ -91,6 +92,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Views\ActoresView.resx">
+      <DependentUpon>ActoresView.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -113,6 +117,8 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="images_Actores\Anna Lore.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

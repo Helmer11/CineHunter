@@ -35,6 +35,7 @@ namespace CineHunter.Services
                     cmd.Parameters.AddWithValue("@Descripcion", peli.Descripcion);
                     cmd.Parameters.AddWithValue("@Anio", peli.Anio);
                     cmd.Parameters.AddWithValue("@Fecha_Estreno", peli.Fecha_Estreno);
+                    cmd.Parameters.AddWithValue("@ImagenPelicula", peli.ImagenPelicula);
                     cmd.Parameters.AddWithValue("@ActorID", peli.ActorID);
                     cmd.Parameters.AddWithValue("@GeneroID", peli.GeneroID);
                      cmd.ExecuteNonQuery();
@@ -60,10 +61,11 @@ namespace CineHunter.Services
                     cmd.Parameters.AddWithValue("@Descripcion", peli.Descripcion);
                     cmd.Parameters.AddWithValue("@Anio", peli.Anio);
                     cmd.Parameters.AddWithValue("@Fecha_Estreno", peli.Fecha_Estreno);
+                    cmd.Parameters.AddWithValue("@ImagenPelicula", peli.ImagenPelicula);
                     cmd.Parameters.AddWithValue("@ActorID", peli.ActorID);
                     cmd.Parameters.AddWithValue("@GeneroID", peli.GeneroID);
 
-                     cmd.ExecuteNonQuery();
+                    cmd.ExecuteNonQuery();
                     conec.CerrarConexion();
                     return "Se Actualizo correctamente la pelicula";
                 }
