@@ -5,29 +5,15 @@
 /tmp
 /out-tsc
 /obj
-/bin
 
-# Node
-/node_modules
-npm-debug.log
-yarn-error.log
+
 
 # IDEs and editors
-.idea/
 .exe
 .pdb
 .c9/
 *.cache
 .settings/
-*.sublime-workspace
-
-# Visual Studio Code
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-.history/*
 
 # Miscellaneous
 /.angular/cache
