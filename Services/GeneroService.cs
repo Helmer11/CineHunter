@@ -19,6 +19,13 @@ namespace CineHunter.Services
         {
             conec = new Conexion();
         }
+
+
+        /// <summary>
+        /// Metodo que carga los generos de las peliculas
+        /// </summary>
+        /// <returns>Retorna un datatable  con los campos id y descripcion </returns>
+        /// <exception cref="Exception"></exception>
         public DataTable GetGeneros()
         {
             try
@@ -39,6 +46,12 @@ namespace CineHunter.Services
             }
         }
 
+        /// <summary>
+        /// Metodo que guarda el registro del genero
+        /// </summary>
+        /// <param name="gene">Objeto obtenie los valores del genero</param>
+        /// <returns>Retorna un string cuando se agrega en la base de dato, de lo contrario se lanza una excepcion</returns>
+        /// <exception cref="Exception">Se lanza cuando falla al momento de realizar el proceso</exception>
         public string setAgregarGenero(Generos gene)
         {
             try
@@ -59,6 +72,12 @@ namespace CineHunter.Services
             }
         }
 
+        /// <summary>
+        /// Metodo que realiza la actualizacion del genero
+        /// </summary>
+        /// <param name="gene">Objeto que guarda los datos para actualizar el generos</param>
+        /// <returns>Retorna un string cuando se agrega en la base de dato, de lo contrario se lanza una excepcion</returns>
+        /// <exception cref="Exception">Se lanza cuando falla al momento de realizar el proceso</exception>
         public string setEditaGenero(Generos gene)
         {
             try
@@ -80,6 +99,13 @@ namespace CineHunter.Services
             }
         }
 
+
+        /// <summary>
+        /// Metodo que se encarga de inactivar el registro del genero
+        /// </summary>
+        /// <param name="IDGenero">paramentro para buscar el genero e inactivarlo</param>
+        /// <returns>Retorna un string cuando se agrega en la base de dato, de lo contrario se lanza una excepcion</returns>
+        /// <exception cref="Exception">Se lanza cuando falla al momento de realizar el proceso</exception>
         public string setEliminarGenero(int IDGenero)
         {
             try

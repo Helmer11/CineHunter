@@ -30,11 +30,11 @@ namespace CineHunter.Views
             peli = new Peliculas();
             actores = new ActoresServices();
             getCargarGenero();
-            this.getCargarAutor();
+            this.getCargarActor();
 
         }
 
-        private void getCargarAutor()
+        private void getCargarActor()
         {
             CbActores.DisplayMember = "Nombre_Completo";
             CbActores.ValueMember = "Actor_id";

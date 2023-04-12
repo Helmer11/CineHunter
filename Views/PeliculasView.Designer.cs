@@ -42,9 +42,9 @@
             this.dtpFechaExtreno = new System.Windows.Forms.DateTimePicker();
             this.dtpAnio = new System.Windows.Forms.DateTimePicker();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.pbFoto = new System.Windows.Forms.PictureBox();
-            this.BtnCargarImagen = new System.Windows.Forms.Button();
             this.CbActores = new System.Windows.Forms.ComboBox();
+            this.BtnCargarImagen = new System.Windows.Forms.Button();
+            this.pbFoto = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbFoto)).BeginInit();
             this.SuspendLayout();
@@ -182,16 +182,15 @@
             this.groupBox1.Size = new System.Drawing.Size(1227, 529);
             this.groupBox1.TabIndex = 10;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
+            this.groupBox1.Text = "Agregar Peliculas ";
             // 
-            // pbFoto
+            // CbActores
             // 
-            this.pbFoto.Location = new System.Drawing.Point(840, 19);
-            this.pbFoto.Name = "pbFoto";
-            this.pbFoto.Size = new System.Drawing.Size(362, 423);
-            this.pbFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pbFoto.TabIndex = 14;
-            this.pbFoto.TabStop = false;
+            this.CbActores.FormattingEnabled = true;
+            this.CbActores.Location = new System.Drawing.Point(64, 99);
+            this.CbActores.Name = "CbActores";
+            this.CbActores.Size = new System.Drawing.Size(404, 21);
+            this.CbActores.TabIndex = 16;
             // 
             // BtnCargarImagen
             // 
@@ -203,13 +202,14 @@
             this.BtnCargarImagen.UseVisualStyleBackColor = true;
             this.BtnCargarImagen.Click += new System.EventHandler(this.BtnCargarImagen_Click);
             // 
-            // CbActores
+            // pbFoto
             // 
-            this.CbActores.FormattingEnabled = true;
-            this.CbActores.Location = new System.Drawing.Point(64, 99);
-            this.CbActores.Name = "CbActores";
-            this.CbActores.Size = new System.Drawing.Size(404, 21);
-            this.CbActores.TabIndex = 16;
+            this.pbFoto.Location = new System.Drawing.Point(840, 19);
+            this.pbFoto.Name = "pbFoto";
+            this.pbFoto.Size = new System.Drawing.Size(362, 423);
+            this.pbFoto.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pbFoto.TabIndex = 14;
+            this.pbFoto.TabStop = false;
             // 
             // PeliculasView
             // 

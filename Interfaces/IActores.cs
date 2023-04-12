@@ -11,6 +11,7 @@ namespace CineHunter.Interfaces
     internal interface IActores
     {
         DataTable getActores();
+        DataTable getDetalleActores(int id);
         string setAgregarActores(Actores act);
         string setEditaActores(Actores act);
 
